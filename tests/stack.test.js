@@ -1,4 +1,4 @@
-const { Stack } = require('../stack')
+import Stack from '../stack/stack'
 
 describe('Stack', () => {
     it('should have a functional push method', () => {

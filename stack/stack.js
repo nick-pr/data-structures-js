@@ -1,4 +1,4 @@
-class Stack {
+export default class Stack {
     constructor() {
         this.height = 0
         this.items = {}
@@ -24,5 +24,3 @@ class Stack {
         return this.height
     }
 }
-
-module.exports = { Stack }
