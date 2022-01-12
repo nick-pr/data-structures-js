@@ -1,19 +1,23 @@
 class Queue {
     constructor() {
-        this.items = [];
+        this.items = []
     }
+
     get length() {
-        return this.items.length;
+        return this.items.length
     }
+
     enqueue(item) {
-        this.items.push(item);
+        this.items.push(item)
     }
+
     dequeue() {
-        return this.items.shift();
+        return this.items.shift()
     }
-    peek(){
+
+    peek() {
         return this.items[0]
     }
 }
 
-module.exports = { Queue };
+module.exports = { Queue }

@@ -1,18 +1,28 @@
 {
-  "name": "data-structures",
-  "version": "1.0.0",
-  "description": "",
-  "main": "stack.js",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jest": "^27.4.7"
-  }
+    "name": "data-structures",
+    "version": "1.0.0",
+    "description": "",
+    "main": "stack.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint . --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "eslint-plugin-jest": "^25.3.4",
+        "jest": "^27.4.7"
+    },
+    "devDependencies": {
+        "eslint": "^8.6.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.5.1"
+    }
 }
