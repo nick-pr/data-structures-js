@@ -8,8 +8,6 @@
         "test": "tests"
     },
     "scripts": {
-        "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-        "lint": "eslint . --fix"
     },
     "keywords": [],
     "author": "",
