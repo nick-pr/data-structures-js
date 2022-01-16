@@ -65,6 +65,25 @@ class BinarySearchTree {
         };
         return traverse(this.root);
     }
+    /** Returns a sorted array,least to greatest, of all keys in the tree. */
+    toSortedArray() {
+        // 1: Recursive function definition.
+        const traverse = (node, result) => {
+            // 1A: If left node exists, traverse left.
+            if (node.left) traverse(node.left, result);
+
+            // 1B: If no left, push current node's key unto result array
+            result.push(node.key);
+
+            // 1C: If right node exists, traverse right in it's tree.
+            if (node.right) traverse(node.right, result);
+
+            // 1D: Return result array for each recursive call.
+            return result;
+        };
+        // 2: Calling traverse on root node and passing in emtpy array.
+        return traverse(this.root, []);
+    }
 }
 
 const bst = new BinarySearchTree();
@@ -73,4 +92,4 @@ bst.insert(4, 'bar');
 bst.insert(3, 'foo');
 bst.insert(10, 'cat');
 bst.insert(2, 'cat');
-console.log(bst.max);
+console.log(bst.toSortedArray());
