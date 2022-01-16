@@ -49,6 +49,24 @@ class BinarySearchTree {
         // 2: Call the recursize traversal function.
         return traverse(this.root);
     }
+    /** The max key of the tree. */
+    get max() {
+        let current = this.root;
+        while (true) {
+            if (!current.right) {
+                return current.key;
+            }
+            current = current.right;
+        }
+    }
+    /** The min key of the tree. */
+    get min() {
+        let current = this.root;
+        while (true) {
+            if (!current.left) return current.key;
+            current = current.left;
+        }
+    }
 }
 
 const bst = new BinarySearchTree();
@@ -56,4 +74,5 @@ bst.insert(5, 'hello');
 bst.insert(4, 'bar');
 bst.insert(3, 'foo');
 bst.insert(10, 'cat');
-console.log(bst.search(4));
+bst.insert(2, 'cat');
+console.log(bst.min);
