@@ -26,7 +26,7 @@ class BinarySearchTree {
                 traverse(node.left);
             }
         };
-        // 3. Call recursive traveral function.
+        // 3. Call recursive traversal function.
         traverse(this.root);
     }
     /** Given a key, will search the tree and return the value at that key.
